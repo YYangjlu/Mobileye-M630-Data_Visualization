@@ -39,6 +39,7 @@ class MainWindows(QWidget):
     def SetUI(self):
         self.resize(1144,850)
         self.setWindowTitle('Mobileye Sight')
+        self.setWindowIcon(QIcon('./Pic/Logo.jpg'))
         self.VB = QVBoxLayout()
         self.HB = QHBoxLayout()
         self.CAN_Channel = CAN_Channel()
