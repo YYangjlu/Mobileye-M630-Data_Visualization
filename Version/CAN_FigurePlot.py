@@ -17,10 +17,6 @@ class CAN_FigurePlot(QWidget):
         self.Timer_Cur_Ped.timeout.connect(self.Plot_Data_Ped)
         self.Timer_Cur_Veh.timeout.connect(self.Plot_Data_Veh)
         self.Timer_Cur_Lane.timeout.connect(self.Plot_Data_Lane)
-
-        '''！！！这里要实例数据类型，方便在后面画图的时候直接调用数据，同时在MainWindow中实例话CAN_Plot类后，
-        可以直接对数据进行更改，且在这个界面中可以直接调用MainWindow更改后的数据来绘图（暂时不知道其他方法，
-        先用这种模式）！！！'''
         self.Obstacle = CAN_Data_Obstacle()
         self.Lane = CAN_Data_Lane()
 
